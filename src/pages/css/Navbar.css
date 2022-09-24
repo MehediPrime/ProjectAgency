@@ -6,7 +6,7 @@
     
 }
 .navLogo{
-    margin-left: 110px;
+    margin-left: 75px;
     display: flex;
     align-items: center;
 }
@@ -46,7 +46,7 @@
 }
 .navButton>.navGetBtn{
     cursor: pointer;
-    margin-right: 65px;
+    margin-right: 100px;
     height: 45px;
     width: 120px;
     font-size: 15px;

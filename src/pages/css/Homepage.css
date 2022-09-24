@@ -1,0 +1,108 @@
+.homepageContainer{
+    background-color: #fff;
+}
+/* ----------------- HERO SECTION -----------------  */
+.heroSection{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.heroSectionLeft{
+    margin-left: 75px;
+    margin-top: 134px;
+    padding-right: 25px;
+}
+.heroSectionLeft>h1{
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 75px;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+}
+.textBackgroundImg{
+    position:absolute;
+}
+.heroSectionLeft>p{
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 34px;
+    color: #818A94;
+}
+.emailBar{
+    margin-top: 90px;
+    width: 770px;
+    height: 70px;
+    padding: 8px;
+    background: #F6F8FF;
+    border: 2px solid rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+}
+.emailBar>input{
+    margin-right: auto;
+    background: transparent;
+    border: none;
+    outline: none;
+    width: 550px;
+    height: 40px;
+    padding: 10px;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.emailBar>button{
+    cursor: pointer;
+    margin-left: auto;
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    width: 170px;
+    height: 60px;
+    background: #F06449;
+    box-shadow: 0px 6px 40px rgba(240, 100, 73, 0.4);
+    border: none;;
+    border-radius: 8px;
+}
+
+.heroSectionRight{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ----------------- STATISTICS SECTION -----------------  */
+.statistics{
+    margin-top: 144px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-left: auto;
+}
+.statisticItem{
+    text-align: center;
+}
+.statisticItem>h1{
+    font-size: 50px;
+    font-weight: 700px;
+    margin-bottom: 16px;
+}
+.statisticItem>p{
+    font-size: 24px;
+    font-weight: 500;
+    color: #2793F2;
+}
+.statisticItem>.lineOne{
+    height: 37px;
+    float: right;
+    margin-top: -75px;
+    padding-left: 8px;
+    border: none;
+    border-left: 2px solid rgba(240, 100, 73, 0.4);
+}
+.statisticItem>.lineTwo{
+    height: 37px;
+    float: right;
+    margin-top: -65px;
+    border: none;
+    border-left: 2px solid rgba(240, 100, 73, 0.4);
+}
