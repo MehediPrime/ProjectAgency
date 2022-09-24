@@ -1,0 +1,60 @@
+.navbar{
+    padding: 28px 0px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.08);
+    
+}
+.navLogo{
+    margin-left: 110px;
+    display: flex;
+    align-items: center;
+}
+.navLink{
+    display: flex;
+    align-items: center;
+}
+.navLink>ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navLink>ul>li>a{
+    margin: 0px 20px;
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #000;
+}
+.navLink>ul>li>a:hover{
+    color: #F06449;
+}
+
+.navButton>.navLoginBtn{
+    cursor: pointer;
+    margin-right: 18px;
+    height: 45px;
+    width: 120px;
+    font-size: 15px;
+    font-weight: 700;
+    background-color: #FFF;
+    color: #F06449;
+    border: 2px solid #F06449;
+    border-radius: 5px;
+}
+.navButton>.navGetBtn{
+    cursor: pointer;
+    margin-right: 65px;
+    height: 45px;
+    width: 120px;
+    font-size: 15px;
+    font-weight: 700;
+    background-color: #F06449;
+    color: #FFF;
+    border: 2px solid #F06449;
+    border-radius: 5px;
+}
+
+
