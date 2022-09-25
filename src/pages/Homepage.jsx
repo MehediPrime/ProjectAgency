@@ -1,13 +1,17 @@
 import React from "react";
 import './css/Homepage.css'
-import vector from '../img/Vector.svg'
-
+import vector from '../img/Vector.svg';
+import Slider from "./Slider";
+import bgOne from '../img/bgOne.svg'
 const Homepage = () =>{
     return(
         <div className="homepageContainer">
+            <div className="bgStyleOne">
+                <img src={bgOne} alt="" />
+            </div>
+            <div className="bgStyleTwo"></div>
             <div className="heroSection">
                 <div className="heroSectionLeft">
-                    
                     <h1>Lorem Ipsum is <span style={{color:"#2793F2"}}><img src={vector} alt="img" className="textBackgroundImg"/>simply dummy</span> text of the printing</h1>
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum has been</p>
                     <div className="emailBar">
@@ -16,7 +20,7 @@ const Homepage = () =>{
                     </div>
                 </div>
                 <div className="heroSectionRight">
-                    Image Slider
+                    <Slider/>
                 </div>
             </div>
             <div className="statistics">

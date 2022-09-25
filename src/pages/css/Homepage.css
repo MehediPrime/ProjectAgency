@@ -1,10 +1,28 @@
 .homepageContainer{
     background-color: #fff;
+    margin-top: 100px;
+}
+.bgStyleOne{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 1;
+}
+.bgStyleTwo{
+    position: absolute;
+    width: 165px;
+    height: 450px;
+    right: 0px;
+    top: 208px;
+    z-index: 1;
+    background: #FDE8E4;
+    border-radius: 6px 0px 0px 6px;
 }
 /* ----------------- HERO SECTION -----------------  */
 .heroSection{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    
 }
 .heroSectionLeft{
     margin-left: 75px;
