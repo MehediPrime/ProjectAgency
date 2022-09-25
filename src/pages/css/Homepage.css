@@ -36,6 +36,17 @@
     margin-bottom: 25px;
     letter-spacing: 2px;
 }
+@keyframes LeftToRight {
+    0% {transform: translateX(-100px);opacity: 0;}
+    100% {transform: translateX(0px);opacity: 1;}
+}
+
+.animationLR{
+    animation-name: LeftToRight;
+    animation-duration: 1s;
+}
+
+
 .textBackgroundImg{
     position:absolute;
 }
