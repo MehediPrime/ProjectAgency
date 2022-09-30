@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState} from "react";
 import './css/Homepage.css'
 import vector from '../img/Vector.svg';
 import Slider from "./Slider";
@@ -8,18 +8,18 @@ import arrowIcon from '../img/arrow-right-circle-fill.svg';
 
 const Homepage = () =>{
 
-    // const[revealStatus, setRevealStatus] = useState(false);
-    // const RevealComponentOnScroll = () =>{
-    //     const reveal = document.getElementsByClassName("nonRevealLeft");
-    //     for (let index = 0; index < reveal.length; index++) {
-    //         const innerHeight = window.innerHeight;
-    //         const elementTop = reveal[index].getBoundingClientRect().top;
-    //         console.log(elementTop + " " +innerHeight);
-    //         elementTop < innerHeight-150 ?  setRevealStatus(true) : setRevealStatus(false);
-    //     }
-    // }
+    const[revealStatus, setRevealStatus] = useState(false);
+    const RevealComponentOnScroll = () =>{
+        const reveal = document.getElementsByClassName("processCards");
+        for (let index = 0; index < reveal.length; index++) {
+            const innerHeight = window.innerHeight;
+            const elementTop = reveal[index].getBoundingClientRect().top;
+            console.log(elementTop + " " +innerHeight);
+            elementTop < innerHeight-100 ?  setRevealStatus(true) : setRevealStatus(false);
+        }
+    }
     
-    // window.addEventListener("scroll", RevealComponentOnScroll);
+    window.addEventListener("scroll", RevealComponentOnScroll);
 
 
     let valueDisplay = document.getElementsByClassName("numCount");
@@ -39,7 +39,6 @@ const Homepage = () =>{
                         clearInterval(counter);
                     }
                 }, duration);
-
             }
         }
     },[valueDisplay])
@@ -91,7 +90,7 @@ const Homepage = () =>{
 
             <div className="processSection">
                 <h1>Process We Follow</h1>
-                <div className="processCards">
+                <div className={ revealStatus ? "processCards animationAppear" : "processCards"}>
                     <div className="processCard">
                         <img src={iconOne} alt="icon"/>
                         <h1>Market Research</h1>

@@ -149,12 +149,25 @@
     line-height: 50px;
     letter-spacing: 0.05em;
 }
+
 .processCards{
+    opacity: 0;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 40px;
 }
+@keyframes appear {
+    0% {opacity: 0;}
+    50% {opacity: 0.5;}
+    100% {opacity: 1;}
+}
+.animationAppear{
+    animation-name: appear;
+    animation-duration: 1s;
+    opacity: 1;
+}
+
 .processCard{
     width: 454px;
     border: 3px solid #E8E9F0;
