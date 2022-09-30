@@ -1,13 +1,25 @@
 import React from "react";
 
-const Navbar = () =>{
+const NotFound = () =>{
+    const style = {
+        height: "100vh", 
+        width:"100vw", 
+        zIndex:10, 
+        backgroundColor:"#fff", 
+        position:"fixed",
+        display:"flex",
+        justifyContent:"center",
+        alignItems:"center",
+        flexDirection:"column"
+    }
+
     return(
-        <>
-            <h1>404 Not Found</h1>
-            <p>Url not found</p>
-        </>
+        <div  style={style}>
+            <h1>File Not Found</h1>
+            <p>Either this file doesn’t exist or you don’t have permission to view it.</p>
+        </div>
     );
 }
 
-export default Navbar;
+export default NotFound;
 

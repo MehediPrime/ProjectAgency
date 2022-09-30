@@ -25,7 +25,7 @@
     
 }
 .heroSectionLeft{
-    margin-left: 75px;
+    margin-left: 110px;
     margin-top: 134px;
     padding-right: 25px;
 }
@@ -55,6 +55,7 @@
     font-weight: 400;
     line-height: 34px;
     color: #818A94;
+    letter-spacing: 1px;
 }
 .emailBar{
     margin-top: 90px;
@@ -73,10 +74,10 @@
     border: none;
     outline: none;
     width: 550px;
-    height: 40px;
     padding: 10px;
     font-size: 24px;
     font-weight: 400;
+    letter-spacing: 1px;
 }
 
 .emailBar>button{
@@ -101,7 +102,7 @@
 }
 
 /* ----------------- STATISTICS SECTION -----------------  */
-.statistics{
+.statisticsSection{
     margin-top: 144px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -134,4 +135,76 @@
     margin-top: -65px;
     border: none;
     border-left: 2px solid rgba(240, 100, 73, 0.4);
+}
+
+/* ----------------- Process We Follow SECTION -----------------  */
+.processSection{
+    margin: 120px 110px 120px 110px;
+}
+.processSection>h1{
+    margin-bottom: 70px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 50px;
+    letter-spacing: 0.05em;
+}
+.processCards{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+.processCard{
+    width: 454px;
+    border: 3px solid #E8E9F0;
+    border-radius: 20px;
+    padding: 40px;
+}
+.processCard>h1{
+    margin-top: 40px;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 40px;
+    letter-spacing: 0.05em;
+    color: #262735;
+}
+.processCard>p{
+    margin-top: 16px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: 0.05em;
+    color: #6C7279;
+}
+.processCard.last{
+    background-color: #FEF3F1;
+    border: 3px solid #F06449;
+}
+.processCard.last>h1{
+    margin-top: 0px;
+}
+.processCard.last>button{
+    margin-top: 30px;
+    background-color: transparent;
+    border: none;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 40px;
+    letter-spacing: 0.05em;
+    text-decoration-line: underline;
+    color: #F06449;
+}
+
+/* ----------------- Our Services SECTION -----------------  */
+.serviceSection{
+    margin: 120px 110px 120px 110px;
+}
+.serviceSection>h1{
+    margin-bottom: 70px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 50px;
+    letter-spacing: 0.05em;
 }

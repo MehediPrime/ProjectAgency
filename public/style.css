@@ -1,6 +1,6 @@
-*{
+/* *{
   cursor: none;
-}
+} */
 .MouseCursor{
     position: fixed;
     z-index: 50;

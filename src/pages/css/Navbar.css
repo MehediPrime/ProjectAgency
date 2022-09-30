@@ -38,18 +38,6 @@
     color: #F06449;
 }
 
-.navButton>.navLoginBtn{
-    cursor: pointer;
-    margin-right: 18px;
-    height: 45px;
-    width: 120px;
-    font-size: 15px;
-    font-weight: 700;
-    background-color: #FFF;
-    color: #F06449;
-    border: 2px solid #F06449;
-    border-radius: 5px;
-}
 .navButton>.navGetBtn{
     cursor: pointer;
     margin-right: 100px;

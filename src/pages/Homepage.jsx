@@ -2,7 +2,10 @@ import React, { useEffect, useState } from "react";
 import './css/Homepage.css'
 import vector from '../img/Vector.svg';
 import Slider from "./Slider";
-import bgOne from '../img/bgOne.svg'
+import bgOne from '../img/bgOne.svg';
+import iconOne from '../img/IconOne.svg';
+import arrowIcon from '../img/arrow-right-circle-fill.svg';
+
 const Homepage = () =>{
 
     // const[revealStatus, setRevealStatus] = useState(false);
@@ -44,10 +47,9 @@ const Homepage = () =>{
     
     return(
         <div className="homepageContainer">
-            <div className="bgStyleOne">
-                <img src={bgOne} alt="" />
-            </div>
+            <div className="bgStyleOne"><img src={bgOne} alt="" /></div>
             <div className="bgStyleTwo"></div>
+
             <div className="heroSection">
                 <div className='heroSectionLeft' >
                     <h1 className="animationLR">Lorem Ipsum is <span style={{color:"#2793F2"}}><img src={vector} alt="img" className="textBackgroundImg"/>simply dummy</span> text of the printing</h1>
@@ -61,7 +63,8 @@ const Homepage = () =>{
                     <Slider/>
                 </div>
             </div>
-            <div className="statistics">
+
+            <div className="statisticsSection">
                 <div className="statisticItem">
                     <h1><span className="numCount" data-val="30">0</span>+</h1>
                     <p>Completed Project</p>
@@ -85,7 +88,48 @@ const Homepage = () =>{
                     <p>Client Satisfaction</p>
                 </div>
             </div>
-            <div style={{height:"300px"}}></div>
+
+            <div className="processSection">
+                <h1>Process We Follow</h1>
+                <div className="processCards">
+                    <div className="processCard">
+                        <img src={iconOne} alt="icon"/>
+                        <h1>Market Research</h1>
+                        <p>Lorem Ipsum is simply dummy text of the printing industry.</p>
+                    </div>
+                    <div className="processCard">
+                        <img src={iconOne} alt="icon"/>
+                        <h1>Brainstorming & Planning</h1>
+                        <p>Lorem Ipsum is simply dummy text of the printing industry.</p>
+                    </div>
+                    <div className="processCard">
+                        <img src={iconOne} alt="icon"/>
+                        <h1>Design & Prototype</h1>
+                        <p>Lorem Ipsum is simply dummy text of the printing industry.</p>
+                    </div>
+                    <div className="processCard">
+                        <img src={iconOne} alt="icon"/>
+                        <h1>Implementation</h1>
+                        <p>Lorem Ipsum is simply dummy text of the printing industry.</p>
+                    </div>
+                    <div className="processCard">
+                        <img src={iconOne} alt="icon"/>
+                        <h1>Testing & Deployment</h1>
+                        <p>Lorem Ipsum is simply dummy text of the printing industry.</p>
+                    </div>
+                    <div className="processCard last">
+                        <h1>We help you add value to your product</h1>
+                        <p>Add value to your product to reach out billions of customers.</p>
+                        <button>
+                            Let’s Talk <img src={arrowIcon} alt="->" width="28.33px"/>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div className="serviceSection">
+                <h1>Our Services</h1>
+            </div>
         </div>
         
     );
